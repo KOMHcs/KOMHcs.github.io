@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 56px;
+    width: 100%;
+    box-shadow: 0 0 10px #dddddd;
+    background-color: white;
+    position: fixed;
+    top: 0;
+}
+
+.container {
+    max-width: 980px;
+    padding: 0 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-right {
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+/*ヘッダー部分*/
+
+.header-logo {
+    height: 40px;
+    margin-top: 8px;
+}
+
+.header-right a {
+    line-height: 56px;
+    color: #5a5c5f;
+    margin-left: 5px;
+    font-size: 16px;
+    padding: 16px 5px;
+}
+
+.header-right a:hover {
+    background-color: #e2f1ff;
+    transition: ease-in-out 0.5s;
+}
+
+/*メインビジュアル部分*/
+
+.main-visual {
+    padding-top: 140px;
+    padding-bottom: 100px;
+    background-image: url("images/main.png");
+    background-size: cover;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+.top-title {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.top-subtitle {
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+.top-text {
+    opacity: 0.9;
+}
+
+/* メイン部分 */
+
+.main {
+    padding: 80px 0;
+    color: #5a5c5f;
+    text-align: center;
+}
+
+.main h2 {
+    margin-bottom: 25px;
+}
+
+.main-image {
+    width: 450px;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 4px #b7b7b7;
+    border-radius: 5px;
+}
+
+.main h3 {
+    margin-bottom: 10px;
+}
+
+.menu-title {
+    text-align: center;
+}
+
+.menu {
+    padding: 90px 0 60px;
+    color: #5a5c5f;
+}
+
+.menu-card-index {
+    width: 33%;
+    margin-top: 35px;
+    width: calc(100vw / 4);
+}
+
+.menu-card-inner {
+    padding: 25px 35px;
+    background-color: #dbe0e4;
+    border-radius: 7px;
+    box-shadow: 1px 1px 4px #d2d4d6;
+    text-align: center;
+    margin: 0 50px;
+}
+
+.menu-image {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.menu-title {
+    margin-bottom: 8px;
+}
+
+.menu-text {
+    font-size: 14px;
+}
+
+.menu-card-wrapper {
+    display: flex;
+    overflow: hidden;
+}
+
+.slider {
+    animation: scroll-left 20s infinite linear .5s both;
+    display: flex;
+}
+
+@keyframes scroll-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+.go-menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.go-menu a {
+    color: #5a5c5f;
+    text-align: center;
+    text-decoration: none;
+}
+
+.go-menu a:hover {
+    background-color: #e2f1ff;
+    transition: ease-in-out 0.2s;
+    
+}
+
+/* フッター部分 */
+
+.footer {
+    height: 120px;
+    background-color: #2f3a44;
+    color: #e8e8e8;
+    padding-top: 20px;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    float: right;
+    padding-top: 50px;
+}
+
+.footer-left p {
+    margin-bottom: 8px;
+}
